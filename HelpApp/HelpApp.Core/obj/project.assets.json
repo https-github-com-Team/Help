@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
       "projectName": "HelpApp.Core",
-      "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

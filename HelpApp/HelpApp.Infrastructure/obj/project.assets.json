@@ -2469,11 +2469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
       "projectName": "HelpApp.Infrastructure",
-      "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2492,8 +2492,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
+            "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
             }
           }
         }
