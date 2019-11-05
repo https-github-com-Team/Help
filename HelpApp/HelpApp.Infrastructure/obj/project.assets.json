@@ -2469,11 +2469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
       "projectName": "HelpApp.Infrastructure",
-      "projectPath": "C:\\Users\\User\\source\\repos\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\HelpApp\\HelpApp.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2492,8 +2492,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
+            "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
             }
           }
         }
@@ -2519,16 +2519,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
