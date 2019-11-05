@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Core.dll
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.AssemblyInfo.cs
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.deps.json
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.dll
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.pdb
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Core.pdb
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.csprojAssemblyReference.cache
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.csproj.CopyComplete
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.dll
+C:\Users\User\source\repos\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.pdb
