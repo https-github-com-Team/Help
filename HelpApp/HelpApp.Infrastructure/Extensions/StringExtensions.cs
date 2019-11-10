@@ -6,6 +6,9 @@ namespace HelpApp.Infrastructure.Extensions
 {
     public static class StringExtensions
     {
-       
+        public static void Test()
+        {
+
+        }
     }
 }

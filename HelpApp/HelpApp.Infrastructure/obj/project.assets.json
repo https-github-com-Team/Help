@@ -2463,23 +2463,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\SHAMISTAN\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
       "projectName": "HelpApp.Infrastructure",
-      "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\SHAMISTAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SHAMISTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2492,8 +2492,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\New folder (2)\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
+            "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+              "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
             }
           }
         }
@@ -2519,10 +2519,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
