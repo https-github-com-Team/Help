@@ -5,11 +5,3 @@ C:\Users\User\source\repos\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp
 C:\Users\User\source\repos\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.AssemblyInfo.cs
 C:\Users\User\source\repos\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.dll
 C:\Users\User\source\repos\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.pdb
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\bin\Debug\netstandard2.0\HelpApp.Core.deps.json
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\bin\Debug\netstandard2.0\HelpApp.Core.dll
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\bin\Debug\netstandard2.0\HelpApp.Core.pdb
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.csprojAssemblyReference.cache
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.AssemblyInfoInputs.cache
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.AssemblyInfo.cs
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.dll
-C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Core\obj\Debug\netstandard2.0\HelpApp.Core.pdb

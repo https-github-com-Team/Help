@@ -6,10 +6,14 @@ namespace HelpApp.Infrastructure.Extensions
 {
     public static class StringExtensions
     {
-        public static void Test(int a, int b)
+        public static void GitCommand()
         {
-            var result = 0;
-           result= a + b;
+            //git add .
+            //git commit -m ""
+            //git push 
+
+
+            //git pull
         }
     }
 }
