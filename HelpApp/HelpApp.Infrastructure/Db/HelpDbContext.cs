@@ -15,5 +15,11 @@ namespace HelpApp.Infrastructure.Db
         }
       
         public DbSet<Product> Products { get; set; }
+        public DbSet<Photo> Photos { get; set; }
+        public DbSet<Person> People { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Country> Countries  { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<SubCategory> SubCategories { get; set; }
     }
 }

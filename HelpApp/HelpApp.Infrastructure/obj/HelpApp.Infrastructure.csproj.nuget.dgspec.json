@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {}
+    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
         "projectName": "HelpApp.Core",
-        "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
-        "packagesPath": "C:\\Users\\SHAMISTAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SHAMISTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,20 +62,20 @@
         }
       }
     },
-    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {
+    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
         "projectName": "HelpApp.Infrastructure",
-        "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\SHAMISTAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SHAMISTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
-                "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
+              "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
               }
             }
           }

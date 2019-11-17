@@ -34,7 +34,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.City", b =>
@@ -57,7 +57,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("City");
+                    b.ToTable("Cities");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.Country", b =>
@@ -75,7 +75,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Country");
+                    b.ToTable("Countries");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.Person", b =>
@@ -99,7 +99,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Person");
+                    b.ToTable("People");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.Photo", b =>
@@ -122,7 +122,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Photo");
+                    b.ToTable("Photos");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.Product", b =>
@@ -187,7 +187,7 @@ namespace HelpApp.WebApi.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("SubCategory");
+                    b.ToTable("SubCategories");
                 });
 
             modelBuilder.Entity("HelpApp.Core.Models.City", b =>

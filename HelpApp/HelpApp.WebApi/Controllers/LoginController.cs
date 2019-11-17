@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HelpApp.WebApi.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : BaseController
     {
-        public IActionResult Index()
+        [HttpGet("login")]
+        [ApiExplorerSettings(GroupName = "v2")]
+        public IActionResult Login()
         {
             return View();
         }

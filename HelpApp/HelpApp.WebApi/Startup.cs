@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using HelpApp.Core.Contracts;
+using HelpApp.Core.Services;
 using HelpApp.Infrastructure.Db;
+using HelpApp.Infrastructure.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -59,6 +62,15 @@ namespace HelpApp.WebApi
                         }
                     });
             });
+
+
+            #region Servises Registration
+
+            services.AddScoped<ICountryService, CountryService>();
+
+            #endregion
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
