@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {}
+    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
         "projectName": "HelpApp.Core",
-        "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\obj\\",
+        "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj",
+        "packagesPath": "C:\\Users\\SHAMISTAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SHAMISTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,11 +41,23 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -62,20 +74,20 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {
+    "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
         "projectName": "HelpApp.Infrastructure",
-        "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\HelpApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\SHAMISTAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SHAMISTAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +100,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Project\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
+              "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj": {
+                "projectPath": "C:\\Users\\SHAMISTAN\\Desktop\\Help-master\\Help\\HelpApp\\HelpApp.Core\\HelpApp.Core.csproj"
               }
             }
           }
@@ -103,6 +115,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.0.0, )"

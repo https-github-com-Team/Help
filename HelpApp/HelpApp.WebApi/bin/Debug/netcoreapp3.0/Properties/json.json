@@ -1,0 +1,31 @@
+{
+  "content": {
+    "multipart/form-data": {
+      "schema": {
+        "required": [
+          "image",
+          "pdf"
+        ],
+        "type": "object",
+        "properties": {
+          "pdf": {
+            "type": "string",
+            "format": "binary"
+          },
+          "image": {
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "encoding": {
+        "pdf": {
+          "style": "form"
+        },
+        "image": {
+          "style": "form"
+        }
+      }
+    }
+  }
+}

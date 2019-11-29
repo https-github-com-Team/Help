@@ -24,6 +24,57 @@ namespace HelpApp.Infrastructure.UnitOfWork
             }
         }
 
+        public ICityRepository CityRepository
+        {
+            get => CityRepository = new CityRepository(_db);
+            set
+            {
+                if (value == null) throw new ArgumentNullException(nameof(value));
+            }
+        }
+
+        public IPersonRepository PersonRepository
+        {
+            get => PersonRepository = new PersonRepository(_db);
+            set
+            {
+                if (value == null) throw new ArgumentNullException(nameof(value));
+            }
+        }
+
+        public IProductRepository ProductRepository
+        {
+            get => ProductRepository = new ProductRepository(_db);
+            set
+            {
+                if (value == null) throw new ArgumentNullException(nameof(value));
+            }
+        }
+
+        public ICategoryRepository CategoryRepository
+        {
+            get => CategoryRepository = new CategoryRepository(_db);
+            set
+            {
+                if (value == null) throw new ArgumentNullException(nameof(value));
+            }
+        }
+
+        public ISubCategoryRepository SubCategoryRepository
+        {
+            get => SubCategoryRepository = new SubCategoryRepository(_db);
+            set
+            {
+                if (value == null) throw new ArgumentNullException(nameof(value));
+            }
+        }
+
+
+
+
+
+
+
 
         #endregion
     }

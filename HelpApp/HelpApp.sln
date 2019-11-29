@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpApp.WebApi", "HelpApp.WebApi\HelpApp.WebApi.csproj", "{842CA86A-0CA1-44C2-8CAC-7CB2918CA176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpApp.WebApi", "HelpApp.WebApi\HelpApp.WebApi.csproj", "{842CA86A-0CA1-44C2-8CAC-7CB2918CA176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpApp.Front", "HelpApp.Front\HelpApp.Front.csproj", "{8BCE542C-EB67-44C0-96DD-9B9D5AD18042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpApp.Front", "HelpApp.Front\HelpApp.Front.csproj", "{8BCE542C-EB67-44C0-96DD-9B9D5AD18042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpApp.Core", "HelpApp.Core\HelpApp.Core.csproj", "{DA81D12B-72F5-4E6C-912C-F7F3B72DFA61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpApp.Core", "HelpApp.Core\HelpApp.Core.csproj", "{DA81D12B-72F5-4E6C-912C-F7F3B72DFA61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpApp.Infrastructure", "HelpApp.Infrastructure\HelpApp.Infrastructure.csproj", "{AA0DAB35-DBDA-4AB3-9FD6-CDEAE630D674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpApp.Infrastructure", "HelpApp.Infrastructure\HelpApp.Infrastructure.csproj", "{AA0DAB35-DBDA-4AB3-9FD6-CDEAE630D674}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,6 +4,11 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.WebApi\HelpApp.WebApi.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
@@ -13,12 +18,27 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc3" />
+  
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.0.0-beta" />
+   
+
+
+
+
+
+
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HelpApp.Core\HelpApp.Core.csproj" />
+
     <ProjectReference Include="..\HelpApp.Infrastructure\HelpApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SwaggerFIle\" />
   </ItemGroup>
 
 </Project>

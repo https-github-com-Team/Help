@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using HelpApp.Core.Contracts;
 using HelpApp.Core.Services;
@@ -9,12 +10,14 @@ using HelpApp.Infrastructure.Db;
 using HelpApp.Infrastructure.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+
+
+
 
 namespace HelpApp.WebApi
 {
@@ -32,10 +35,11 @@ namespace HelpApp.WebApi
             string assemblyName = typeof(HelpDbContext).Namespace;
 
             services.AddDbContext<HelpDbContext>(options =>
-                
+
                 options.UseSqlServer(Configuration["Db:ConnectionString"], b => b.MigrationsAssembly("HelpApp.WebApi"))
            );
 
+           services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -61,12 +65,28 @@ namespace HelpApp.WebApi
                             Email = "elshadzr@code.edu.az"
                         }
                     });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                //... and tell Swagger to use those XML comments.
+                c.IncludeXmlComments(xmlPath);
+
+                // c.OperationFilter<SwaggerFileOperationFilter>();
+
             });
 
 
             #region Servises Registration
 
             services.AddScoped<ICountryService, CountryService>();
+            services.AddScoped<ICityService, CityService>();
+            services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ISubCategoryService, SubCategoryService>();
+
+
+
 
             #endregion
 
@@ -80,13 +100,20 @@ namespace HelpApp.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMvc();
             app.UseSwagger();
+            app.UseStaticFiles();
             app.UseSwaggerUI(c =>
+
             {
                 c.RoutePrefix = "";
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API V2");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger XML Api Demo v1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "Swagger XML Api Demo v1");
+
                 c.DocumentTitle = "Help WebApi";
+
             });
             app.UseHttpsRedirection();
             app.UseRouting();
