@@ -39,7 +39,9 @@ namespace HelpApp.WebApi
                 options.UseSqlServer(Configuration["Db:ConnectionString"], b => b.MigrationsAssembly("HelpApp.WebApi"))
            );
 
-           services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddMvcCore()
+                    .AddApiExplorer();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -65,11 +67,12 @@ namespace HelpApp.WebApi
                             Email = "elshadzr@code.edu.az"
                         }
                     });
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
-                //... and tell Swagger to use those XML comments.
-                c.IncludeXmlComments(xmlPath);
+
+                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                //c.IncludeXmlComments(xmlPath);
+
 
                 // c.OperationFilter<SwaggerFileOperationFilter>();
 
@@ -88,6 +91,7 @@ namespace HelpApp.WebApi
 
 
 
+
             #endregion
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -100,7 +104,13 @@ namespace HelpApp.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                // SwaggerGen won't find controllers that are routed via this technique.
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
+            // app.UseMvc();
+
             app.UseSwagger();
             app.UseStaticFiles();
             app.UseSwaggerUI(c =>

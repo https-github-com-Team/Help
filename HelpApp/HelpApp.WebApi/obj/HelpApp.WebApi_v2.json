@@ -804,68 +804,7 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "Name": {
-                    "type": "string"
-                  },
-                  "Description": {
-                    "type": "string"
-                  },
-                  "CategoryId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "CityId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "PersonId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Files": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "format": "binary"
-                    }
-                  },
-                  "PublishDate": {
-                    "type": "string",
-                    "format": "date-time"
-                  },
-                  "EndedDate": {
-                    "type": "string",
-                    "format": "date-time"
-                  }
-                }
-              },
-              "encoding": {
-                "Name": {
-                  "style": "form"
-                },
-                "Description": {
-                  "style": "form"
-                },
-                "CategoryId": {
-                  "style": "form"
-                },
-                "CityId": {
-                  "style": "form"
-                },
-                "PersonId": {
-                  "style": "form"
-                },
-                "Files": {
-                  "style": "form"
-                },
-                "PublishDate": {
-                  "style": "form"
-                },
-                "EndedDate": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/ProductRequestDTO"
               }
             }
           }

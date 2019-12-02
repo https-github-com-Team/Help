@@ -10,7 +10,7 @@ namespace HelpApp.WebApi.Utilities
     {
         public static bool Remove(string root, string image)
         {
-            string path = Path.Combine(root, "Assets/Image", image);
+            string path = Path.Combine(root , image);
             if (System.IO.File.Exists(path))
             {
                 System.IO.File.Delete(path);

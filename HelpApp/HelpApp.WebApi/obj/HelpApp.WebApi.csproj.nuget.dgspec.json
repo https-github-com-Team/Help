@@ -216,15 +216,15 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0-rc3, )"
+              "version": "[5.0.0-rc4, )"
             },
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[5.0.0-beta, )"
             },
-            "Swashbuckle.AspNetCore.Swagger": {
+            "Swashbuckle.AspNetCore.SwaggerUi": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[5.0.0-rc4, )"
             }
           },
           "imports": [

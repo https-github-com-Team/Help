@@ -38,7 +38,8 @@ namespace HelpApp.WebApi.Controllers
         // POST: api/addCity
         [HttpPost("addProduct")]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Post([SwaggerParameter(Required =true),FromForm] ProductRequestDTO product)
+      
+        public async Task<IActionResult> Post([FromForm] ProductRequestDTO product)
         {
             try
             {
@@ -53,7 +54,8 @@ namespace HelpApp.WebApi.Controllers
 
         // PUT: api/Country/5
         [HttpPut("updateProduct/{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] ProductRequestDTO product)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Put(int id, [FromForm] ProductRequestDTO product)
         {
             try
             {

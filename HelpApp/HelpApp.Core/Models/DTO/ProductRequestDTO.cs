@@ -17,6 +17,7 @@ namespace HelpApp.Core.Models.DTO
         public int PersonId { get; set; }
        
         public List<IFormFile> Files { get; set; }
+
         public DateTime? PublishDate { get; set; }
         public DateTime? EndedDate { get; set; }
 
