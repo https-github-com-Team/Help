@@ -21,12 +21,12 @@ namespace HelpApp.Infrastructure.Repositories
 
         public async Task<IEnumerable<Country>> GetCountries()
         {
-            return await _db.Countries.ToListAsync();
+            return await _db.Countries.Include(c=>c.Cities).ToListAsync();
         }
 
         public async Task<Country> GetCountryById(int id)
         {
-            return await _db.Countries.SingleOrDefaultAsync(c=>c.Id==id);
+            return await _db.Countries.Include(c => c.Cities).SingleOrDefaultAsync(c=>c.Id==id);
         }
 
         public async Task<Country> AddCountry(CountryRequestDTO country)
@@ -73,10 +73,16 @@ namespace HelpApp.Infrastructure.Repositories
         {
             try
             {
-                var deleteCountry = await _db.Countries.FirstOrDefaultAsync(c => c.Id == id);
+                var deleteCountry = await _db.Countries.Include(c => c.Cities).FirstOrDefaultAsync(c => c.Id == id);
 
                 if (deleteCountry == null)
                     return null;
+
+                if (deleteCountry.Cities!=null)
+                {
+                    _db.Cities.RemoveRange(deleteCountry.Cities);
+                    await _db.SaveChangesAsync();
+                }
 
                 _db.Countries.Remove(deleteCountry);
                 await _db.SaveChangesAsync();
