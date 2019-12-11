@@ -20,3 +20,14 @@ C:\Users\User\Desktop\Project\HelpApp\HelpApp.Infrastructure\obj\Debug\netstanda
 C:\Users\User\Desktop\Project\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.csproj.CopyComplete
 C:\Users\User\Desktop\Project\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.dll
 C:\Users\User\Desktop\Project\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.pdb
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.deps.json
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.dll
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Infrastructure.pdb
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Core.dll
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\bin\Debug\netstandard2.0\HelpApp.Core.pdb
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.csprojAssemblyReference.cache
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.AssemblyInfo.cs
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.csproj.CopyComplete
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.dll
+C:\Users\SHAMISTAN\Desktop\Help-master\Help\HelpApp\HelpApp.Infrastructure\obj\Debug\netstandard2.0\HelpApp.Infrastructure.pdb

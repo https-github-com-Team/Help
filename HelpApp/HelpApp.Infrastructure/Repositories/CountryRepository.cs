@@ -21,7 +21,7 @@ namespace HelpApp.Infrastructure.Repositories
 
         public async Task<IEnumerable<Country>> GetCountries()
         {
-            return await _db.Countries.Include(c=>c.Cities).ToListAsync();
+            return await _db.Countries.ToListAsync();
         }
 
         public async Task<Country> GetCountryById(int id)
@@ -33,10 +33,14 @@ namespace HelpApp.Infrastructure.Repositories
         {
             try
             {
+                if (_db.Countries.Any(c=>c.Name.Contains(country.Name)))
+                    return null;
+
                 Country newCountry = new Country()
                 {
                     Name = country.Name
                 };
+
 
                 _db.Countries.Add(newCountry);
 
