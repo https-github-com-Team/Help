@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HelpApp.WebApi.Controllers
 {
+    [ApiExplorerSettings(GroupName = "v1")]
     [Route("api/[controller]")]
     [ApiController]
     public class BaseController : Controller

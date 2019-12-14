@@ -4,53 +4,55 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using HelpApp.Front.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using RequestLibrary.Cors;
+using RequestLibrary.Cors.Services;
+using RequestLibrary.Models;
 
 namespace HelpApp.Front.Controllers
 {
     [Route("[controller]")]
     public class CountryController : BaseController
     {
+
         [HttpGet("countries")]
         public async Task<IActionResult> Countries()
         {
-            var response = await _HttpClient.GetAsync(_Url + $"api/country/countries");
+            
+            var response = await _service.GetCountries();
 
-            response.EnsureSuccessStatusCode();
-
-            var result = await response.Content.ReadAsStringAsync();
-
-            var account = JsonConvert.DeserializeObject<List<ClientCountryDTO>>(result);
-
-            return Ok(account);
+            return Ok(response);
         }
-        [HttpPost("addCountry")]
-        public async Task<IActionResult> AddCountry([FromBody] ClientCountryDTO country)
+
+        [HttpGet("countryById")]
+        public async Task<IActionResult> CountryById(int id)
         {
 
-            try
-            {
-                var json = JsonConvert.SerializeObject(country);
-                var data = new StringContent(json, Encoding.UTF8, "application/json");
-                var response = await _HttpClient.PostAsync(_Url + $"api/country/addCountry", data);
+            var response = await _service.GetCountry(id);
 
-                response.EnsureSuccessStatusCode();
+            return Ok(response);
+        }
+        [HttpPost("addCountry")]
+        public async Task<IActionResult> AddCountry([FromBody] CountryModel country)
+        {
+            var response = await _service.AddCountry(country);
 
-                var result = await response.Content.ReadAsStringAsync();
+            return Ok(response);
+        }
+        [HttpDelete("deleteCountry")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var response = await _service.DeleteCountry(id);
 
-                var account = JsonConvert.DeserializeObject<ClientCountryDTO>(result);
+            return Ok(response);
+        }
+        [HttpPut("updateCountry")]
+        public async Task<IActionResult> UpdateCountry([FromBody] CountryModel country)
+        {
+            var response = await _service.UpdateCountry(country.Id, country);
 
-                if (account == null)
-                    return BadRequest();
-
-                return Ok(account);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            return Ok(response);
         }
     }
 }

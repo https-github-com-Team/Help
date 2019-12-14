@@ -1,4 +1,5 @@
 ﻿using HelpApp.Core.Contracts;
+using HelpApp.Core.Enums;
 using HelpApp.Core.Models;
 using HelpApp.Core.Models.DTO;
 using HelpApp.Infrastructure.Db;
@@ -19,22 +20,58 @@ namespace HelpApp.Infrastructure.Repositories
             _db = db;
         }
 
-        public async Task<IEnumerable<Country>> GetCountries()
+        public async Task<StandartAnswer<IEnumerable<Country>>> GetCountries()
         {
-            return await _db.Countries.ToListAsync();
-        }
-
-        public async Task<Country> GetCountryById(int id)
-        {
-            return await _db.Countries.Include(c => c.Cities).SingleOrDefaultAsync(c=>c.Id==id);
-        }
-
-        public async Task<Country> AddCountry(CountryRequestDTO country)
-        {
+            var answer = new StandartAnswer<IEnumerable<Country>>(); 
             try
             {
-                if (_db.Countries.Any(c=>c.Name.Contains(country.Name)))
-                    return null;
+                answer.Data = await _db.Countries.ToListAsync();
+                answer.Code = ResultCodes.Ok;
+                answer.Description = "Sheherler";
+             }
+            catch (Exception ex)
+            {
+                answer.Code = ResultCodes.UnknownError;
+                answer.ErrorMessage = ex.Message;
+            }
+            return answer;
+        }
+
+        public async Task<StandartAnswer<Country>> GetCountryById(int id)
+        {
+            var answer = new StandartAnswer<Country>();
+            try
+            {
+                answer.Data = await _db.Countries.Include(c => c.Cities).SingleOrDefaultAsync(c => c.Id == id);
+                answer.Code = ResultCodes.Ok;
+            }
+            catch (Exception ex)
+            {
+                answer.Code = ResultCodes.UnknownError;
+                answer.ErrorMessage = ex.Message;
+            }
+            return answer;
+        }
+
+        public async Task<StandartAnswer<Country>> AddCountry(CountryRequestDTO country)
+        {
+            var answer = new StandartAnswer<Country>();
+
+
+            try
+            {
+                if(String.IsNullOrEmpty(country.Name))
+                {
+                    answer.Code = ResultCodes.InvalidParameters;
+                    answer.Description = "Sheherin adi null ve ya bos ola bilmez";
+                    return answer;
+                }
+                if (_db.Countries.Any(c => c.Name.Contains(country.Name)))
+                {
+                    answer.Code = ResultCodes.AlreadyExists;
+                    answer.Description = "Bele bir Sheher artiq var";
+                    return answer;
+                }
 
                 Country newCountry = new Country()
                 {
@@ -45,42 +82,66 @@ namespace HelpApp.Infrastructure.Repositories
                 _db.Countries.Add(newCountry);
 
                 await _db.SaveChangesAsync();
-
-                return newCountry;
+                answer.Data = newCountry;
+                answer.Code = ResultCodes.Created;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
+                answer.ErrorMessage = ex.Message;
+                answer.Code = ResultCodes.UnknownError;
             }
+            return answer;
         }
 
-        public async Task<Country> UpdateCountry(int id, CountryRequestDTO country)
+        public async Task<StandartAnswer<Country>> UpdateCountry(int id, CountryRequestDTO country)
         {
+
+            var answer = new StandartAnswer<Country>();
             try
             {
+
+                if (_db.Countries.Any(c => c.Name.Contains(country.Name)))
+                {
+                    answer.Code = ResultCodes.AlreadyExists;
+                    answer.Description = "Bele bir sheher adi artiq var";
+                    return answer;
+                }
                 var updateCountry =await _db.Countries.SingleOrDefaultAsync(x => x.Id == id);
 
                 if (updateCountry == null)
-                    return null;
+                {
+                    answer.Code = ResultCodes.NotFound;
+                    answer.Description = "Database-de bele bir sheher adi yoxdu";
+                    return answer;
+                }
 
                 updateCountry.Name = country.Name;
+                updateCountry.AddedDate = DateTime.Now;
                 await _db.SaveChangesAsync();
-                return updateCountry;
+                answer.Data = updateCountry;
+                answer.Code = ResultCodes.Ok;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
+                answer.ErrorMessage = ex.Message;
+                answer.Code = ResultCodes.UnknownError;
             }
+            return answer;
         }
 
-        public async Task<Country> DeleteCountry(int id)
+        public async Task<StandartAnswer<Country>> DeleteCountry(int id)
         {
+            var answer = new StandartAnswer<Country>();
             try
             {
                 var deleteCountry = await _db.Countries.Include(c => c.Cities).FirstOrDefaultAsync(c => c.Id == id);
 
                 if (deleteCountry == null)
-                    return null;
+                { 
+                    answer.Code = ResultCodes.NotFound;
+                    answer.Description = "Sheheri tapmaq mumkun olmadi";
+                    return answer;
+                }
 
                 if (deleteCountry.Cities!=null)
                 {
@@ -90,13 +151,16 @@ namespace HelpApp.Infrastructure.Repositories
 
                 _db.Countries.Remove(deleteCountry);
                 await _db.SaveChangesAsync();
-                return deleteCountry;
+                answer.Data = deleteCountry;
+                answer.Code = ResultCodes.Ok;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
-            }
 
+                answer.ErrorMessage = ex.Message;
+                answer.Code = ResultCodes.UnknownError;
+            }
+            return answer;
         }
     }
 }

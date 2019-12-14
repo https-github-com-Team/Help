@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace HelpApp.Front.DTOs
+namespace RequestLibrary.Models
 {
-    public class ClientCityDTO
+    public class CountryModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int CountryId { get; set; }
-        public DateTime AddedDate { get; set; }
     }
 }

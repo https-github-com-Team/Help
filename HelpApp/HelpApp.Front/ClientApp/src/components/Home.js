@@ -4,8 +4,8 @@ export class Home extends Component {
     static displayName = Home.name;
 
     componentDidMount = () => {
-        axios.post("https://localhost:44388/Country/addCountry", {
-            Name: 'Turkiye'
+        axios.get("https://localhost:44388/Country/countryById/5", {
+            id:7
         })
             .then(response => {
                 console.log(response.data);

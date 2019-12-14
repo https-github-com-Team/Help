@@ -19,65 +19,45 @@ namespace HelpApp.WebApi.Controllers
         }
         // GET: api/Country
         [HttpGet("countries")]
-        public async Task<IEnumerable<Country>> Countries()
+        public async Task<StandartAnswer<IEnumerable<Country>>> Countries()
         {
             return await _countryService.GetCountries();
         }
 
-        // GET: api/Country/5
-        [HttpGet("countryById/{id}")]
-        public async Task<Country> CountryById(int id)
+        // GET: api/Country?id=5
+        [HttpGet("countryById")]
+        public async Task<StandartAnswer<Country>> CountryById(int id)
         {
-            var country = await _countryService.GetCountryById(id);
-            return country;
+            var answer = await _countryService.GetCountryById(id);
+
+            return answer;
         }
 
         // POST: api/Country
         [HttpPost("addCountry")]
-        public async Task<IActionResult> Post([FromBody] CountryRequestDTO country)
+        public async Task<StandartAnswer<Country>> Post([FromBody] CountryRequestDTO country)
         {
-            try
-            {
-                var addinCountry = await _countryService.AddCountry(country);
+            var answer = await _countryService.AddCountry(country);
 
-                return Ok(addinCountry);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            return answer;
         }
 
-        // PUT: api/Country/5
-        [HttpPut("updateCountry/{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] CountryRequestDTO country)
+        // PUT: api/Country?id=5
+        [HttpPut("updateCountry")]
+        public async Task<StandartAnswer<Country>> Put(int id, [FromBody] CountryRequestDTO country)
         {
-            try
-            {
-                var updateCountry = await _countryService.UpdateCountry(id, country);
+            var answer = await _countryService.UpdateCountry(id, country);
 
-                return Ok(updateCountry);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            return answer;
         }
 
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("deleteCountry/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        // DELETE: api/ApiWithActions?id=5
+        [HttpDelete("deleteCountry")]
+        public async Task<StandartAnswer<Country>> Delete(int id)
         {
-            try
-            {
-                var deleteCountry = await _countryService.DeleteCountry(id);
-                
-                return Ok(deleteCountry);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex);
-            }
+            var answer = await _countryService.DeleteCountry(id);
+
+            return answer;
         }
     }
 }

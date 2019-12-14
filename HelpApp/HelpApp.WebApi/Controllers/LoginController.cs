@@ -9,7 +9,6 @@ namespace HelpApp.WebApi.Controllers
     public class LoginController : BaseController
     {
         [HttpGet("login")]
-        [ApiExplorerSettings(GroupName = "v2")]
         public IActionResult Login()
         {
             return View();

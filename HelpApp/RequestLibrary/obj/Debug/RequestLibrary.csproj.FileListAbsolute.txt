@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\obj\Debug\RequestLibrary.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\RequestLibrary.dll
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\RequestLibrary.pdb
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\RestSharp.dll
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\RestSharp.xml
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\obj\Debug\RequestLibrary.csproj.CopyComplete
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\obj\Debug\RequestLibrary.dll
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\obj\Debug\RequestLibrary.pdb
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\HelpApp.Core.dll
+C:\Users\User\Desktop\Project\HelpApp\RequestLibrary\bin\Debug\HelpApp.Core.pdb

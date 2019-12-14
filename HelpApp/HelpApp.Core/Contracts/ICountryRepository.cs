@@ -9,10 +9,10 @@ namespace HelpApp.Core.Contracts
 {
     public interface ICountryRepository
     {
-        Task<IEnumerable<Country>> GetCountries();
-        Task<Country> GetCountryById(int id);
-        Task<Country> AddCountry(CountryRequestDTO country);
-        Task<Country> UpdateCountry(int id,CountryRequestDTO country);
-        Task<Country> DeleteCountry(int id);
+        Task<StandartAnswer<IEnumerable<Country>>> GetCountries();
+        Task<StandartAnswer<Country>> GetCountryById(int id);
+        Task<StandartAnswer<Country>> AddCountry(CountryRequestDTO country);
+        Task<StandartAnswer<Country>> UpdateCountry(int id,CountryRequestDTO country);
+        Task<StandartAnswer<Country>> DeleteCountry(int id);
     }
 }
